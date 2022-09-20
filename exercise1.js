@@ -6,6 +6,6 @@ fetch("https://jsonplaceholder.typicode.com/todos")
       console.log(`${todo.title} - ${todo.completed}`)
     })
   })
-  .catch(function(err) { 
-    console.log(err);
+  .catch(function(todoTitles) { 
+    console.log(todoTitles);
   });
