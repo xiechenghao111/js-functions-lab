@@ -1,7 +1,7 @@
 fetch("https://jsonplaceholder.typicode.com/todos")
   .then(response => response.json())
   .then(json => {
-     const completed = json.true
+     const completed = true
      completed.forEach( (todo, index) => {
       console.log(`${todo.title} - ${todo.completed}`)
     })
